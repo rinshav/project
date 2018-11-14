@@ -1,0 +1,17 @@
+{% extends 'layouts.html' %}
+{% block bk %}
+<h1 class="h1 h1-warning">Employee data</h1>
+{% for stud in data1 %}
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4"> 
+	<ul class="list-group"  style="padding: 10px 0 10px 0">
+	<li class="list-group-item"> <b>Id</b>: {{stud.id}}</li>
+	<li class="list-group-item"> <b>Nmae</b>: {{stud.name}}</li>
+	<li class="list-group-item"> <b>Job Title</b>: {{stud.title}}</li>
+</ul>
+</div>
+</div>
+</ul>
+{% endfor %}
+{% endblock %}
